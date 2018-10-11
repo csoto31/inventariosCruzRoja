@@ -50,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -198,12 +200,49 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TERRITORIOsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\EMPLEADO.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\INVENTARIO.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ModeloBD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloBD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PERSONA.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TERRITORIO.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -216,10 +255,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\ModeloBD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+      <LastGenOutput>ModeloBD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModeloBD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+      <LastGenOutput>ModeloBD.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\ModeloBD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloBD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModeloBD.edmx.diagram">
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -266,6 +322,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TERRITORIOs\Create.cshtml" />
+    <Content Include="Views\TERRITORIOs\Delete.cshtml" />
+    <Content Include="Views\TERRITORIOs\Details.cshtml" />
+    <Content Include="Views\TERRITORIOs\Edit.cshtml" />
+    <Content Include="Views\TERRITORIOs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -282,6 +343,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
