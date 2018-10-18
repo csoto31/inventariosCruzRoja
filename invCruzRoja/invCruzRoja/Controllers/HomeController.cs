@@ -47,5 +47,33 @@ namespace invCruzRoja.Controllers
 
             return View();
         }
+
+        public ActionResult Charlie()
+        {
+            return View();
+        }
+        public ActionResult Christopher()
+        {
+            return View();
+        }
+        public ActionResult Diego()
+        {
+            return View();
+        }
+        public ActionResult Maria()
+        {
+            return View();
+        }
+
+        public ActionResult Cristian()
+        {
+            return View();
+        }
+
+        public ActionResult Carlos()
+        {
+            return View();
+        }
+
     }
 }

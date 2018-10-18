@@ -271,6 +271,12 @@
     <Content Include="Views\PERSONAS\Details.cshtml" />
     <Content Include="Views\PERSONAS\Edit.cshtml" />
     <Content Include="Views\PERSONAS\Index.cshtml" />
+    <Content Include="Views\Home\Charlie.cshtml" />
+    <Content Include="Views\Home\Christopher.cshtml" />
+    <Content Include="Views\Home\Maria.cshtml" />
+    <Content Include="Views\Home\Diego.cshtml" />
+    <Content Include="Views\Home\Cristian.cshtml" />
+    <Content Include="Views\Home\Carlos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
