@@ -1,0 +1,114 @@
+﻿@model invCruzRoja.Models.INVENTARIO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>INVENTARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSerie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSerie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaAsignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaAsignado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRetiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRetiro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoActivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MACAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MACAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Propietario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Propietario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PERSONAS.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PERSONAS.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TERRITORIOS.Comite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDInventario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

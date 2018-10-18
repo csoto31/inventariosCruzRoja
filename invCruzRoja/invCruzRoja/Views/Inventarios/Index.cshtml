@@ -1,0 +1,99 @@
+﻿@model IEnumerable<invCruzRoja.Models.INVENTARIO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumSerie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaAsignado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaRetiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoActivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MACAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Propietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PERSONAS.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumSerie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaAsignado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaRetiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoActivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MACAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Propietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PERSONAS.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TERRITORIOS.Comite)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDInventario }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDInventario }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDInventario })
+        </td>
+    </tr>
+}
+
+</table>
