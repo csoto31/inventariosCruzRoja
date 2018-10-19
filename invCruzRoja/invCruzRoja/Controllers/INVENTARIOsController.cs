@@ -12,12 +12,12 @@ namespace invCruzRoja.Controllers
 {
     public class INVENTARIOsController : Controller
     {
-        private CRUZROJAINVEntities db = new CRUZROJAINVEntities();
+        private CRUZROJAINVEntities1 db = new CRUZROJAINVEntities1();
 
         // GET: INVENTARIOs
         public ActionResult Index()
         {
-            var iNVENTARIO = db.INVENTARIO.Include(i => i.PERSONAS).Include(i => i.TERRITORIOS);
+            var iNVENTARIO = db.INVENTARIOs.Include(i => i.PERSONA).Include(i => i.TERRITORIO);
             return View(iNVENTARIO.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            INVENTARIO iNVENTARIO = db.INVENTARIO.Find(id);
+            INVENTARIO iNVENTARIO = db.INVENTARIOs.Find(id);
             if (iNVENTARIO == null)
             {
                 return HttpNotFound();
@@ -53,7 +53,7 @@ namespace invCruzRoja.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.INVENTARIO.Add(iNVENTARIO);
+                db.INVENTARIOs.Add(iNVENTARIO);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -70,7 +70,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            INVENTARIO iNVENTARIO = db.INVENTARIO.Find(id);
+            INVENTARIO iNVENTARIO = db.INVENTARIOs.Find(id);
             if (iNVENTARIO == null)
             {
                 return HttpNotFound();
@@ -105,7 +105,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            INVENTARIO iNVENTARIO = db.INVENTARIO.Find(id);
+            INVENTARIO iNVENTARIO = db.INVENTARIOs.Find(id);
             if (iNVENTARIO == null)
             {
                 return HttpNotFound();
@@ -118,8 +118,8 @@ namespace invCruzRoja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            INVENTARIO iNVENTARIO = db.INVENTARIO.Find(id);
-            db.INVENTARIO.Remove(iNVENTARIO);
+            INVENTARIO iNVENTARIO = db.INVENTARIOs.Find(id);
+            db.INVENTARIOs.Remove(iNVENTARIO);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
