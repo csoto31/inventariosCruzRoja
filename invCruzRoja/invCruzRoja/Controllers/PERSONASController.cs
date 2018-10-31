@@ -12,12 +12,14 @@ namespace invCruzRoja.Controllers
 {
     public class PERSONASController : Controller
     {
-        private CRUZROJAINVEntities db = new CRUZROJAINVEntities();
+        private CRUZROJAINVEntities1 db = new CRUZROJAINVEntities1();
+
+        public CRUZROJAINVEntities1 Db { get => db; set => db = value; }
 
         // GET: PERSONAS
         public ActionResult Index()
         {
-            var pERSONAS = db.PERSONAS.Include(p => p.TERRITORIOS);
+            var pERSONAS = Db.PERSONAS.Include(p => p.TERRITORIO);
             return View(pERSONAS.ToList());
         }
 
@@ -28,7 +30,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PERSONAS pERSONAS = db.PERSONAS.Find(id);
+            PERSONA pERSONAS = Db.PERSONAS.Find(id);
             if (pERSONAS == null)
             {
                 return HttpNotFound();
@@ -39,7 +41,7 @@ namespace invCruzRoja.Controllers
         // GET: PERSONAS/Create
         public ActionResult Create()
         {
-            ViewBag.IDTerritorio = new SelectList(db.TERRITORIOS, "IDTerritorio", "Comite");
+            ViewBag.IDTerritorio = new SelectList(Db.TERRITORIOS, "IDTerritorio", "Comite");
             return View();
         }
 
@@ -48,16 +50,16 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDPersona,Nombre,Apellido1,Apellido2,Telefono,Email,Rol,IDTerritorio")] PERSONAS pERSONAS)
+        public ActionResult Create([Bind(Include = "IDPersona,Nombre,Apellido1,Apellido2,Telefono,Email,Rol,IDTerritorio")] PERSONA pERSONAS)
         {
             if (ModelState.IsValid)
             {
-                db.PERSONAS.Add(pERSONAS);
-                db.SaveChanges();
+                Db.PERSONAS.Add(pERSONAS);
+                Db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IDTerritorio = new SelectList(db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
+            ViewBag.IDTerritorio = new SelectList(Db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
             return View(pERSONAS);
         }
 
@@ -68,12 +70,12 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PERSONAS pERSONAS = db.PERSONAS.Find(id);
+            PERSONA pERSONAS = Db.PERSONAS.Find(id);
             if (pERSONAS == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.IDTerritorio = new SelectList(db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
+            ViewBag.IDTerritorio = new SelectList(Db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
             return View(pERSONAS);
         }
 
@@ -82,15 +84,15 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDPersona,Nombre,Apellido1,Apellido2,Telefono,Email,Rol,IDTerritorio")] PERSONAS pERSONAS)
+        public ActionResult Edit([Bind(Include = "IDPersona,Nombre,Apellido1,Apellido2,Telefono,Email,Rol,IDTerritorio")] PERSONA pERSONAS)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(pERSONAS).State = EntityState.Modified;
-                db.SaveChanges();
+                Db.Entry(pERSONAS).State = EntityState.Modified;
+                Db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IDTerritorio = new SelectList(db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
+            ViewBag.IDTerritorio = new SelectList(Db.TERRITORIOS, "IDTerritorio", "Comite", pERSONAS.IDTerritorio);
             return View(pERSONAS);
         }
 
@@ -101,7 +103,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PERSONAS pERSONAS = db.PERSONAS.Find(id);
+            PERSONA pERSONAS = Db.PERSONAS.Find(id);
             if (pERSONAS == null)
             {
                 return HttpNotFound();
@@ -114,9 +116,9 @@ namespace invCruzRoja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            PERSONAS pERSONAS = db.PERSONAS.Find(id);
-            db.PERSONAS.Remove(pERSONAS);
-            db.SaveChanges();
+            PERSONA pERSONAS = Db.PERSONAS.Find(id);
+            Db.PERSONAS.Remove(pERSONAS);
+            Db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -124,7 +126,7 @@ namespace invCruzRoja.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                Db.Dispose();
             }
             base.Dispose(disposing);
         }
