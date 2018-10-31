@@ -201,3 +201,4 @@ C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCru
 C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
 C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
 C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
