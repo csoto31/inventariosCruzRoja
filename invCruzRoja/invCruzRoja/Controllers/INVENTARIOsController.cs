@@ -12,7 +12,7 @@ namespace invCruzRoja.Controllers
 {
     public class INVENTARIOsController : Controller
     {
-        private CRUZROJAINVEntities db = new CRUZROJAINVEntities();
+        private CRUZROJACRINVEntities db = new CRUZROJACRINVEntities();
 
         // GET: INVENTARIOs
         public ActionResult Index()
