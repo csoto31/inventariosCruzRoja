@@ -100,312 +100,411 @@ C:\Users\Charlie Guzmán\Desktop\invCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\i
 C:\Users\Charlie Guzmán\Desktop\invCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
 C:\Users\Charlie Guzmán\Desktop\invCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
 C:\Users\Charlie Guzmán\Desktop\invCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\WebGrease.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
-<<<<<<< HEAD
-C:\Users\Charlie Guzmán\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
-=======
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\WebGrease.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Maria Venegas\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\WebGrease.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
-C:\Users\luisd\Documents\GitHub\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
->>>>>>> b5ee158d76f42236e95f8e73eb3e52e849e9acea
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\WebGrease.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
+C:\Users\Joyce Valdez\Desktop\inventariosCruzRoja-Master\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\WebGrease.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\WebGrease.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Diseño\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Nueva carpeta\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\invCruzRoja.pdb
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csc.rsp
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csi.exe.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\csi.rsp
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.AppContext.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Console.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Compression.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Claims.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.ValueTuple.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\vbc.exe.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\vbc.rsp
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\EntityFramework.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\WebGrease.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\EntityFramework.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\EntityFramework.SqlServer.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Helpers.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Mvc.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Optimization.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Web.WebPages.Razor.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Newtonsoft.Json.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Antlr3.Runtime.pdb
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.AI.Web.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojAssemblyReference.cache
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CoreCompileInputs.cache
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csproj.CopyComplete
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
+C:\Users\Charlie Guzmán\Desktop\Funcional\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb

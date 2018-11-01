@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - Sistema de Inventarios</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,33 +16,63 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
-                    <li>@Html.ActionLink("Inventarios", "Index", "Inventarios")</li>
-                    <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
+            @*
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
 
-                    <li>@Html.ActionLink("Charlie", "Charlie", "Home")</li>
-                    <li>@Html.ActionLink("Christopher", "Christopher", "Home")</li>
-                    <li>@Html.ActionLink("Maria", "Maria", "Home")</li>
-                    <li>@Html.ActionLink("Diego", "Diego", "Home")</li>
-                    <li>@Html.ActionLink("Cristian", "Cristian", "Home")</li>
-                    <li>@Html.ActionLink("Carlos", "Carlos", "Home")</li>
-                </ul>
-            </div>
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                        <li>@Html.ActionLink("Inventarios", "Index", "Inventarios")</li>
+                        <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
+                        <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
+                    </ul>
+                </div>
+            </nav>
+            *@
+
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                        <li>@Html.ActionLink("Inventarios", "Index", "Inventarios")</li>
+                        <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
+                        <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
+                    </ul>
+                </div>
+            </nav>
+            @*<div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                <li>@Html.ActionLink("Inventarios", "Index", "Inventarios")</li>
+                <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
+                <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
+            </ul>
+        </div>
+            *@
         </div>
     </div>
     <div class="container body-content">
+        <br /><br />
+        <h4 class="text-center">SISTEMA DE INVENTARIOS DE LA CRUZ ROJA COSTARRICENSE</h4>
+        <br /><br />
         @RenderBody()
+        <br />
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Sistema de Inventarios de la Cruz Roja Costarricense</p>
         </footer>
     </div>
 

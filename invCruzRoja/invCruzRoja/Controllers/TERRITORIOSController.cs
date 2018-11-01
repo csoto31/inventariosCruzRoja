@@ -12,7 +12,7 @@ namespace invCruzRoja.Controllers
 {
     public class TERRITORIOSController : Controller
     {
-        private CRUZROJAINVEntities1 db = new CRUZROJAINVEntities1();
+        private CRUZROJAINVEntities db = new CRUZROJAINVEntities();
 
         // GET: TERRITORIOS
         public ActionResult Index()
@@ -27,7 +27,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            TERRITORIO tERRITORIOS = db.TERRITORIOS.Find(id);
+            TERRITORIOS tERRITORIOS = db.TERRITORIOS.Find(id);
             if (tERRITORIOS == null)
             {
                 return HttpNotFound();
@@ -46,7 +46,7 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDTerritorio,Comite,Provincia,Region")] TERRITORIO tERRITORIOS)
+        public ActionResult Create([Bind(Include = "IDTerritorio,Comite,Provincia,Region")] TERRITORIOS tERRITORIOS)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            TERRITORIO tERRITORIOS = db.TERRITORIOS.Find(id);
+            TERRITORIOS tERRITORIOS = db.TERRITORIOS.Find(id);
             if (tERRITORIOS == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDTerritorio,Comite,Provincia,Region")] TERRITORIO tERRITORIOS)
+        public ActionResult Edit([Bind(Include = "IDTerritorio,Comite,Provincia,Region")] TERRITORIOS tERRITORIOS)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            TERRITORIO tERRITORIOS = db.TERRITORIOS.Find(id);
+            TERRITORIOS tERRITORIOS = db.TERRITORIOS.Find(id);
             if (tERRITORIOS == null)
             {
                 return HttpNotFound();
@@ -109,7 +109,7 @@ namespace invCruzRoja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            TERRITORIO tERRITORIOS = db.TERRITORIOS.Find(id);
+            TERRITORIOS tERRITORIOS = db.TERRITORIOS.Find(id);
             db.TERRITORIOS.Remove(tERRITORIOS);
             db.SaveChanges();
             return RedirectToAction("Index");

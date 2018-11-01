@@ -12,12 +12,12 @@ namespace invCruzRoja.Controllers
 {
     public class EMPLEADOSController : Controller
     {
-        private CRUZROJAINVEntities1 db = new CRUZROJAINVEntities1();
+        private CRUZROJAINVEntities db = new CRUZROJAINVEntities();
 
         // GET: EMPLEADOS
         public ActionResult Index()
         {
-            var eMPLEADOS = db.EMPLEADOS.Include(e => e.PERSONA);
+            var eMPLEADOS = db.EMPLEADOS.Include(e => e.PERSONAS);
             return View(eMPLEADOS.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EMPLEADO eMPLEADOS = db.EMPLEADOS.Find(id);
+            EMPLEADOS eMPLEADOS = db.EMPLEADOS.Find(id);
             if (eMPLEADOS == null)
             {
                 return HttpNotFound();
@@ -48,7 +48,7 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDEmpleado,Usuario,Password,TipoUsuario,IDPersona,Correo")] EMPLEADO eMPLEADOS)
+        public ActionResult Create([Bind(Include = "IDEmpleado,Usuario,Password,TipoUsuario,IDPersona,Correo")] EMPLEADOS eMPLEADOS)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EMPLEADO eMPLEADOS = db.EMPLEADOS.Find(id);
+            EMPLEADOS eMPLEADOS = db.EMPLEADOS.Find(id);
             if (eMPLEADOS == null)
             {
                 return HttpNotFound();
@@ -82,7 +82,7 @@ namespace invCruzRoja.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDEmpleado,Usuario,Password,TipoUsuario,IDPersona,Correo")] EMPLEADO eMPLEADOS)
+        public ActionResult Edit([Bind(Include = "IDEmpleado,Usuario,Password,TipoUsuario,IDPersona,Correo")] EMPLEADOS eMPLEADOS)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +101,7 @@ namespace invCruzRoja.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EMPLEADO eMPLEADOS = db.EMPLEADOS.Find(id);
+            EMPLEADOS eMPLEADOS = db.EMPLEADOS.Find(id);
             if (eMPLEADOS == null)
             {
                 return HttpNotFound();
@@ -114,7 +114,7 @@ namespace invCruzRoja.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            EMPLEADO eMPLEADOS = db.EMPLEADOS.Find(id);
+            EMPLEADOS eMPLEADOS = db.EMPLEADOS.Find(id);
             db.EMPLEADOS.Remove(eMPLEADOS);
             db.SaveChanges();
             return RedirectToAction("Index");
