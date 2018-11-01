@@ -187,9 +187,6 @@
     <Compile Include="Models\PERSONAS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\TERRITORIOS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -4,16 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b3d079d7601b4855b547c128ae234bfd" Name="Diagram1">
-        <EntityTypeShape EntityType="CRUZROJAINVModel.EMPLEADOS" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CRUZROJAINVModel.INVENTARIO" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CRUZROJAINVModel.PERSONAS" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CRUZROJAINVModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CRUZROJAINVModel.TERRITORIOS" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <AssociationConnector Association="CRUZROJAINVModel.FK_EMPLEADOS_PERSONAS" ManuallyRouted="false" />
-        <AssociationConnector Association="CRUZROJAINVModel.FK_INVENTARIO_PERSONAS" ManuallyRouted="false" />
-        <AssociationConnector Association="CRUZROJAINVModel.FK_INVENTARIO_TERRITORIOS" ManuallyRouted="false" />
-        <AssociationConnector Association="CRUZROJAINVModel.FK_PERSONAS_TERRITORIOS" ManuallyRouted="false" />
+      <Diagram DiagramId="8aa11ef6b322433db7728c84b8d57f09" Name="Diagram1">
+        <EntityTypeShape EntityType="CruzRojaInventariosModel.EMPLEADOS" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventariosModel.INVENTARIO" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventariosModel.PERSONAS" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CruzRojaInventariosModel.TERRITORIOS" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="CruzRojaInventariosModel.FK_EMPLEADOS_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventariosModel.FK_INVENTARIO_PERSONAS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventariosModel.FK_INVENTARIO_TERRITORIOS" ManuallyRouted="false" />
+        <AssociationConnector Association="CruzRojaInventariosModel.FK_PERSONAS_TERRITORIOS" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

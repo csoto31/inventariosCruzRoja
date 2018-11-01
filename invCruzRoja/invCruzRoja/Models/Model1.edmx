@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CRUZROJAINVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CruzRojaInventariosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="EMPLEADOS">
           <Key>
             <PropertyRef Name="IDEmpleado" />
@@ -46,16 +46,6 @@
           <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Rol" Type="varchar" MaxLength="50" />
           <Property Name="IDTerritorio" Type="int" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="TERRITORIOS">
           <Key>
@@ -114,11 +104,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CRUZROJAINVModelStoreContainer">
+        <EntityContainer Name="CruzRojaInventariosModelStoreContainer">
           <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TERRITORIOS" EntityType="Self.TERRITORIOS" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_EMPLEADOS_PERSONAS" Association="Self.FK_EMPLEADOS_PERSONAS">
             <End Role="PERSONAS" EntitySet="PERSONAS" />
@@ -141,7 +130,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="CRUZROJAINVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="CruzRojaInventariosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="EMPLEADOS">
           <Key>
             <PropertyRef Name="IDEmpleado" />
@@ -189,16 +178,6 @@
           <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK_EMPLEADOS_PERSONAS" FromRole="PERSONAS" ToRole="EMPLEADOS" />
           <NavigationProperty Name="INVENTARIO" Relationship="Self.FK_INVENTARIO_PERSONAS" FromRole="PERSONAS" ToRole="INVENTARIO" />
           <NavigationProperty Name="TERRITORIOS" Relationship="Self.FK_PERSONAS_TERRITORIOS" FromRole="PERSONAS" ToRole="TERRITORIOS" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="TERRITORIOS">
           <Key>
@@ -259,11 +238,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CRUZROJAINVEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CRUZROJACRINVEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
           <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" />
           <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TERRITORIOS" EntityType="Self.TERRITORIOS" />
           <AssociationSet Name="FK_EMPLEADOS_PERSONAS" Association="Self.FK_EMPLEADOS_PERSONAS">
             <End Role="PERSONAS" EntitySet="PERSONAS" />
@@ -287,9 +265,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CRUZROJAINVModelStoreContainer" CdmEntityContainer="CRUZROJAINVEntities">
+        <EntityContainerMapping StorageEntityContainer="CruzRojaInventariosModelStoreContainer" CdmEntityContainer="CRUZROJACRINVEntities">
           <EntitySetMapping Name="EMPLEADOS">
-            <EntityTypeMapping TypeName="CRUZROJAINVModel.EMPLEADOS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.EMPLEADOS">
               <MappingFragment StoreEntitySet="EMPLEADOS">
                 <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
                 <ScalarProperty Name="Usuario" ColumnName="Usuario" />
@@ -301,7 +279,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INVENTARIO">
-            <EntityTypeMapping TypeName="CRUZROJAINVModel.INVENTARIO">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.INVENTARIO">
               <MappingFragment StoreEntitySet="INVENTARIO">
                 <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
                 <ScalarProperty Name="Marca" ColumnName="Marca" />
@@ -320,7 +298,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERSONAS">
-            <EntityTypeMapping TypeName="CRUZROJAINVModel.PERSONAS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.PERSONAS">
               <MappingFragment StoreEntitySet="PERSONAS">
                 <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
@@ -333,19 +311,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="CRUZROJAINVModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="TERRITORIOS">
-            <EntityTypeMapping TypeName="CRUZROJAINVModel.TERRITORIOS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.TERRITORIOS">
               <MappingFragment StoreEntitySet="TERRITORIOS">
                 <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
                 <ScalarProperty Name="Comite" ColumnName="Comite" />
@@ -371,7 +338,7 @@
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
