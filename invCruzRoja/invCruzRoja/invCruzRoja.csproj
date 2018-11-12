@@ -198,6 +198,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\cruzroja 1.png" />
+    <Content Include="fonts\cruzroja 2.png" />
+    <Content Include="fonts\cruzroja 3.png" />
+    <Content Include="fonts\cruzroja 5.png" />
+    <Content Include="fonts\cruzroja 6.png" />
+    <Content Include="fonts\cruzroja 7.jpg" />
+    <Content Include="fonts\cruzroja 8.png" />
+    <Content Include="fonts\cruzroja.jpg" />
+    <Content Include="fonts\fondo-principal.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
