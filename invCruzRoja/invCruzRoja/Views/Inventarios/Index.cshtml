@@ -4,15 +4,33 @@
     ViewBag.Title = "Index";
 }
 
-<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!----<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">-->
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
 </body>
 
-<h2>Index</h2>
+<h2>Inventario</h2>
+<br />
+<input class="form-control" id="myInput" type="text" placeholder="Busqueda Rapida..">
+<br />
+@Html.ActionLink("Nuevo Item", "Create", "Controller", new { @class = "btn btn-primary" })
+<br />
+<br />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<table class="table table-bordered table-condensed table-hover " id="myTable">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Marca)
@@ -50,54 +68,62 @@
         <th>
             @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
         </th>
-        <th></th>
+        <th>Editar</th>
+        <th>Detalles</th>
+        <th>Eliminar</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Marca)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Modelo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NumSerie)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FechaAsignado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FechaRetiro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Descripcion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TipoActivo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MACAddress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Propietario)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PERSONAS.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TERRITORIOS.Comite)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IDInventario }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IDInventario }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IDInventario })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumSerie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaAsignado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaRetiro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoActivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MACAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PERSONAS.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TERRITORIOS.Comite)
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Edit", new { id = item.IDInventario }, new { @class = "glyphicon glyphicon-pencil" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Details", new { id = item.IDInventario }, new { @class = "glyphicon glyphicon-eye-open" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Delete", new { id = item.IDInventario }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+
+        </tr>
+    }
 
 </table>
 <img src="~/fonts/cruzroja 6.png" align="right">

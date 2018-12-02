@@ -5,117 +5,104 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
-</body>
-
-@* Comment goes here *@
-<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-
-
-
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-
-<body>
-    
-        <div class="container">
-
-            <input class="form-control" id="myInput" type="text" placeholder="Buscador..">
-            @*<ul class="nav nav-tabs nav-justified" role="tablist">
-            <li><a>@Html.DisplayNameFor(model => model.Nombre)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.Apellido1)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.Apellido2)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.Telefono)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.Email)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.Rol)</a></li>
-            <li><a>@Html.DisplayNameFor(model => model.TERRITORIOS.Comite)</a></li>
-        </ul>
-            *@
-
-            <table class="table table-hover">
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Nombre)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Apellido1)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Apellido2)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Telefono)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Email)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Rol)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
-                    </th>
-                    <th></th>
-                </tr>
-                <tbody id="myTable">
-
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Nombre)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Apellido1)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Apellido2)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Telefono)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Email)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Rol)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.TERRITORIOS.Comite)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.IDPersona }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.IDPersona }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.IDPersona })
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-
-            </table>
-        </div>
-
-        
-    <script>
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
+<!----<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">-->
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
-    </script>
+    });
+</script>
 
 </body>
-</html>
+<h2>Empleados</h2>
+<br />
+<input class="form-control" id="myInput" type="text" placeholder="Busqueda Rapida..">
+<br />
+@Html.ActionLink("Nueva Persona", "Create", "Controller", new { @class = "btn btn-primary" })
+<br />
+<br />
+
+
+
+
+
+
+<table class="table  table-hover " id="myTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
+        </th>
+        <th>Editar</th>
+        <th>Detalles</th>
+        <th>Eliminar</th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TERRITORIOS.Comite)
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Edit", new { id = item.IDPersona }, new { @class = "glyphicon glyphicon-pencil" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Details", new { id = item.IDPersona }, new { @class = "glyphicon glyphicon-eye-open" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Delete", new { id = item.IDPersona }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+
 <img src="~/fonts/cruzroja 6.png" align="right">
