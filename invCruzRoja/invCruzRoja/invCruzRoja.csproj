@@ -52,6 +52,31 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -160,6 +185,26 @@
     <Compile Include="Controllers\INVENTARIOsController.cs" />
     <Compile Include="Controllers\PERSONASController.cs" />
     <Compile Include="Controllers\TERRITORIOSController.cs" />
+    <Compile Include="CruzRojaInventariosDataSetEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CruzRojaInventariosDataSetEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CruzRojaInventariosDataSetEmpleadosActivos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CruzRojaInventariosDataSetEmpleadosActivos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CruzRojaInventariosDataSetInventarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CruzRojaInventariosDataSetInventarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CruzRojaInventariosDataSetTerritoriosAct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CruzRojaInventariosDataSetTerritoriosAct.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,10 +232,51 @@
     <Compile Include="Models\PERSONAS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\sp_ReporteActivosPorEmpleados_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ReporteActivosPorTerritorios_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ReporteActivos_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ReporteEmpleados_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\TERRITORIOS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\frmReporteActivosPorEmpleado.aspx.cs">
+      <DependentUpon>frmReporteActivosPorEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteActivosPorEmpleado.aspx.designer.cs">
+      <DependentUpon>frmReporteActivosPorEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteActivosPorTerritorio.aspx.cs">
+      <DependentUpon>frmReporteActivosPorTerritorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteActivosPorTerritorio.aspx.designer.cs">
+      <DependentUpon>frmReporteActivosPorTerritorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteEmpleados.aspx.cs">
+      <DependentUpon>frmReporteEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteEmpleados.aspx.designer.cs">
+      <DependentUpon>frmReporteEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteInventario.aspx.cs">
+      <DependentUpon>frmReporteInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteInventario.aspx.designer.cs">
+      <DependentUpon>frmReporteInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -208,6 +294,8 @@
     <Content Include="fonts\cruzroja.jpg" />
     <Content Include="fonts\fondo-principal.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\logoCR.png" />
+    <Content Include="fonts\logoCRw2.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Models\Model1.Context.tt">
@@ -220,6 +308,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Reportes\frmReporteActivosPorEmpleado.aspx" />
+    <Content Include="Reportes\frmReporteActivosPorTerritorio.aspx" />
+    <Content Include="Reportes\frmReporteEmpleados.aspx" />
+    <Content Include="Reportes\frmReporteInventario.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -232,6 +324,50 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="CruzRojaInventariosDataSetEmpleados.xsc">
+      <DependentUpon>CruzRojaInventariosDataSetEmpleados.xsd</DependentUpon>
+    </Content>
+    <None Include="CruzRojaInventariosDataSetEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CruzRojaInventariosDataSetEmpleados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CruzRojaInventariosDataSetEmpleados.xss">
+      <DependentUpon>CruzRojaInventariosDataSetEmpleados.xsd</DependentUpon>
+    </Content>
+    <Content Include="CruzRojaInventariosDataSetInventarios.xsc">
+      <DependentUpon>CruzRojaInventariosDataSetInventarios.xsd</DependentUpon>
+    </Content>
+    <Content Include="CruzRojaInventariosDataSetEmpleadosActivos.xsc">
+      <DependentUpon>CruzRojaInventariosDataSetEmpleadosActivos.xsd</DependentUpon>
+    </Content>
+    <None Include="CruzRojaInventariosDataSetEmpleadosActivos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CruzRojaInventariosDataSetEmpleadosActivos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CruzRojaInventariosDataSetEmpleadosActivos.xss">
+      <DependentUpon>CruzRojaInventariosDataSetEmpleadosActivos.xsd</DependentUpon>
+    </Content>
+    <None Include="CruzRojaInventariosDataSetInventarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CruzRojaInventariosDataSetInventarios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CruzRojaInventariosDataSetInventarios.xss">
+      <DependentUpon>CruzRojaInventariosDataSetInventarios.xsd</DependentUpon>
+    </Content>
+    <Content Include="CruzRojaInventariosDataSetTerritoriosAct.xsc">
+      <DependentUpon>CruzRojaInventariosDataSetTerritoriosAct.xsd</DependentUpon>
+    </Content>
+    <None Include="CruzRojaInventariosDataSetTerritoriosAct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CruzRojaInventariosDataSetTerritoriosAct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="CruzRojaInventariosDataSetTerritoriosAct.xss">
+      <DependentUpon>CruzRojaInventariosDataSetTerritoriosAct.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -243,6 +379,19 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -296,6 +445,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\rptEmpleados.rdlc" />
+    <EmbeddedResource Include="Reportes\rptEmpleadosActivos.rdlc" />
+    <EmbeddedResource Include="Reportes\rptInventario.rdlc" />
+    <EmbeddedResource Include="Reportes\rptTerritoriosActivos.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

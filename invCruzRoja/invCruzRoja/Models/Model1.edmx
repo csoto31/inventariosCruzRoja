@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CruzRojaInventariosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CruzRojaInventariosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="EMPLEADOS">
           <Key>
             <PropertyRef Name="IDEmpleado" />
@@ -104,6 +104,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_ReporteActivos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+          <Parameter Name="marca" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteActivosPorEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteActivosPorTerritorios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="comite" Type="varchar" Mode="In" />
+          <Parameter Name="provincia" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="usuario" Type="varchar" Mode="In" />
+          <Parameter Name="correo" Type="varchar" Mode="In" />
+        </Function>
         <EntityContainer Name="CruzRojaInventariosModelStoreContainer">
           <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" Schema="dbo" store:Type="Tables" />
@@ -126,8 +151,7 @@
             <End Role="PERSONAS" EntitySet="PERSONAS" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CruzRojaInventariosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -259,7 +283,97 @@
             <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
             <End Role="PERSONAS" EntitySet="PERSONAS" />
           </AssociationSet>
+          <FunctionImport Name="sp_ReporteActivos" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivos_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+            <Parameter Name="marca" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteActivosPorEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorEmpleados_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteActivosPorTerritorios" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result)">
+            <Parameter Name="comite" Mode="In" Type="String" />
+            <Parameter Name="provincia" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteEmpleados_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="usuario" Mode="In" Type="String" />
+            <Parameter Name="correo" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
+        <ComplexType Name="sp_ReporteActivos_Result">
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteActivosPorEmpleados_Result">
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteActivosPorTerritorios_Result">
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteEmpleados_Result">
+          <Property Type="Int32" Name="IDEmpleado" Nullable="false" />
+          <Property Type="String" Name="Usuario" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Correo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TipoUsuario" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Telefono" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Rol" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -321,6 +435,87 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivos" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivos_Result">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorEmpleados" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivosPorEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivosPorEmpleados_Result">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorTerritorios" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivosPorTerritorios">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result">
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteEmpleados" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteEmpleados_Result">
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

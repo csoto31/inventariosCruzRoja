@@ -128,5 +128,95 @@
       <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
       <End Role="PERSONAS" EntitySet="PERSONAS" />
     </AssociationSet>
+    <FunctionImport Name="sp_ReporteActivos" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivos_Result)">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido1" Mode="In" Type="String" />
+      <Parameter Name="apellido2" Mode="In" Type="String" />
+      <Parameter Name="tipoActivo" Mode="In" Type="String" />
+      <Parameter Name="marca" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ReporteActivosPorEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorEmpleados_Result)">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido1" Mode="In" Type="String" />
+      <Parameter Name="apellido2" Mode="In" Type="String" />
+      <Parameter Name="tipoActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ReporteActivosPorTerritorios" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result)">
+      <Parameter Name="comite" Mode="In" Type="String" />
+      <Parameter Name="provincia" Mode="In" Type="String" />
+      <Parameter Name="tipoActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ReporteEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteEmpleados_Result)">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido1" Mode="In" Type="String" />
+      <Parameter Name="apellido2" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="correo" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="sp_ReporteActivos_Result">
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="IDInventario" Nullable="false" />
+    <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_ReporteActivosPorEmpleados_Result">
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="IDInventario" Nullable="false" />
+    <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_ReporteActivosPorTerritorios_Result">
+    <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="IDInventario" Nullable="false" />
+    <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_ReporteEmpleados_Result">
+    <Property Type="Int32" Name="IDEmpleado" Nullable="false" />
+    <Property Type="String" Name="Usuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Correo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TipoUsuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Rol" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+  </ComplexType>
 </Schema>

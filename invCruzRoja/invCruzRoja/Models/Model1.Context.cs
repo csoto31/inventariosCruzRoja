@@ -12,6 +12,8 @@ namespace invCruzRoja.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class CRUZROJACRINVEntities : DbContext
     {
@@ -29,5 +31,93 @@ namespace invCruzRoja.Models
         public virtual DbSet<INVENTARIO> INVENTARIO { get; set; }
         public virtual DbSet<PERSONAS> PERSONAS { get; set; }
         public virtual DbSet<TERRITORIOS> TERRITORIOS { get; set; }
+    
+        public virtual ObjectResult<sp_ReporteActivos_Result> sp_ReporteActivos(string nombre, string apellido1, string apellido2, string tipoActivo, string marca)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var apellido1Parameter = apellido1 != null ?
+                new ObjectParameter("apellido1", apellido1) :
+                new ObjectParameter("apellido1", typeof(string));
+    
+            var apellido2Parameter = apellido2 != null ?
+                new ObjectParameter("apellido2", apellido2) :
+                new ObjectParameter("apellido2", typeof(string));
+    
+            var tipoActivoParameter = tipoActivo != null ?
+                new ObjectParameter("tipoActivo", tipoActivo) :
+                new ObjectParameter("tipoActivo", typeof(string));
+    
+            var marcaParameter = marca != null ?
+                new ObjectParameter("marca", marca) :
+                new ObjectParameter("marca", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivos_Result>("sp_ReporteActivos", nombreParameter, apellido1Parameter, apellido2Parameter, tipoActivoParameter, marcaParameter);
+        }
+    
+        public virtual ObjectResult<sp_ReporteActivosPorEmpleados_Result> sp_ReporteActivosPorEmpleados(string nombre, string apellido1, string apellido2, string tipoActivo)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var apellido1Parameter = apellido1 != null ?
+                new ObjectParameter("apellido1", apellido1) :
+                new ObjectParameter("apellido1", typeof(string));
+    
+            var apellido2Parameter = apellido2 != null ?
+                new ObjectParameter("apellido2", apellido2) :
+                new ObjectParameter("apellido2", typeof(string));
+    
+            var tipoActivoParameter = tipoActivo != null ?
+                new ObjectParameter("tipoActivo", tipoActivo) :
+                new ObjectParameter("tipoActivo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivosPorEmpleados_Result>("sp_ReporteActivosPorEmpleados", nombreParameter, apellido1Parameter, apellido2Parameter, tipoActivoParameter);
+        }
+    
+        public virtual ObjectResult<sp_ReporteActivosPorTerritorios_Result> sp_ReporteActivosPorTerritorios(string comite, string provincia, string tipoActivo)
+        {
+            var comiteParameter = comite != null ?
+                new ObjectParameter("comite", comite) :
+                new ObjectParameter("comite", typeof(string));
+    
+            var provinciaParameter = provincia != null ?
+                new ObjectParameter("provincia", provincia) :
+                new ObjectParameter("provincia", typeof(string));
+    
+            var tipoActivoParameter = tipoActivo != null ?
+                new ObjectParameter("tipoActivo", tipoActivo) :
+                new ObjectParameter("tipoActivo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivosPorTerritorios_Result>("sp_ReporteActivosPorTerritorios", comiteParameter, provinciaParameter, tipoActivoParameter);
+        }
+    
+        public virtual ObjectResult<sp_ReporteEmpleados_Result> sp_ReporteEmpleados(string nombre, string apellido1, string apellido2, string usuario, string correo)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var apellido1Parameter = apellido1 != null ?
+                new ObjectParameter("apellido1", apellido1) :
+                new ObjectParameter("apellido1", typeof(string));
+    
+            var apellido2Parameter = apellido2 != null ?
+                new ObjectParameter("apellido2", apellido2) :
+                new ObjectParameter("apellido2", typeof(string));
+    
+            var usuarioParameter = usuario != null ?
+                new ObjectParameter("usuario", usuario) :
+                new ObjectParameter("usuario", typeof(string));
+    
+            var correoParameter = correo != null ?
+                new ObjectParameter("correo", correo) :
+                new ObjectParameter("correo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteEmpleados_Result>("sp_ReporteEmpleados", nombreParameter, apellido1Parameter, apellido2Parameter, usuarioParameter, correoParameter);
+        }
     }
 }

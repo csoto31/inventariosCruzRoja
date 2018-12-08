@@ -99,6 +99,31 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="sp_ReporteActivos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido1" Type="varchar" Mode="In" />
+    <Parameter Name="apellido2" Type="varchar" Mode="In" />
+    <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+    <Parameter Name="marca" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ReporteActivosPorEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido1" Type="varchar" Mode="In" />
+    <Parameter Name="apellido2" Type="varchar" Mode="In" />
+    <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ReporteActivosPorTerritorios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="comite" Type="varchar" Mode="In" />
+    <Parameter Name="provincia" Type="varchar" Mode="In" />
+    <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ReporteEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido1" Type="varchar" Mode="In" />
+    <Parameter Name="apellido2" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+    <Parameter Name="correo" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="CruzRojaInventariosModelStoreContainer">
     <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" Schema="dbo" store:Type="Tables" />
