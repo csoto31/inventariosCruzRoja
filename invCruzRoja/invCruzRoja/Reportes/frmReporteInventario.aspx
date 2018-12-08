@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Reporte de Activos por Empleado</title>
 </head>
-<body>
+<body style="background-image:url(../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -35,7 +35,7 @@
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/Reportes/frmReporteEmpleados.aspx">Reporte de Empleados</a></li>
-                                <li><a href="/Reportes/frmReporteInventario.aspx">Reporte de Activos por Empleado</a></li>
+                                <li><a href="/Reportes/frmReporteInventario.aspx">Reporte de Inventario</a></li>
                                 <li><a href="/Reportes/frmReporteActivosPorTerritorio.aspx">Reporte de Activos por Territorios</a></li>
                                 <li><a href="/Reportes/frmReporteActivosPorEmpleado.aspx">Reporte de Activos por Empleado</a></li>
                             </ul>
