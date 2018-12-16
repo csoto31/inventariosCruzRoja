@@ -46,17 +46,64 @@
                         <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                         <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                         <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
-                        <li>@Html.ActionLink("Inventarios", "Index", "Inventarios")</li>
-                        <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
-                        <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
+                       
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Inventarios <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                                <li>@Html.ActionLink("Activos", "Index", "Inventarios")</li>
+                                <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
+                                <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="~/Reportes/frmReporteEmpleados.aspx">Reporte de Empleados</a></li>
                                 <li><a href="~/Reportes/frmReporteInventario.aspx">Reporte de Inventario</a></li>
                                 <li><a href="~/Reportes/frmReporteActivosPorTerritorio.aspx">Reporte de Activos por Territorios</a></li>
                                 <li><a href="/Reportes/frmReporteActivosPorEmpleado.aspx">Reporte de Activos por Empleado</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            @if (!Request.IsAuthenticated)
+                            {
+                                <!-- If the user is not authenticated, display the sign-in button -->
+                                <a href="@Url.Action("SignIn", "Home")" style="text-decoration: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="250px" height="35px" viewBox="0 0 3278 522" class="SignInButton">
+                                    <style type="text/css">
+                                        .fil0:hover {
+                                            fill: #4B4B4B;
+                                        }
+
+                                        .fnt0 {
+                                            font-size: 200px;
+                                            font-family: 'Segoe UI Semibold', 'Segoe UI';
+                                            text-decoration: none;
+                                        }
+</style>
+                                    <rect class="fil0" x="2" y="2" width="3174" height="517" fill="none" />
+
+                                    <rect x="150" y="129" width="122" height="122" fill="#F35325" />
+
+                                    <rect x="284" y="129" width="122" height="122" fill="#81BC06" />
+
+                                    <rect x="150" y="263" width="122" height="122" fill="#05A6F0" />
+
+                                    <rect x="284" y="263" width="122" height="122" fill="#FFBA08" />
+
+                                    <text x="470" y="357" fill="white" class="fnt0">Inicio de sesion</text>
+                                </svg>
+                                </a>
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Cerrar Sesion", "SignOut", "Home")
+                            }
+                            @if (!string.IsNullOrWhiteSpace(Request.QueryString["errormessage"]))
+                            {
+                                <div style="background-color:red;color:white;font-weight: bold;">Error: @Request.QueryString["errormessage"]</div>
+                            }
                         </li>
                     </ul>
                 </div>

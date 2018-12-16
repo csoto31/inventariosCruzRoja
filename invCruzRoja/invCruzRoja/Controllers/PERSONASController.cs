@@ -10,6 +10,7 @@ using invCruzRoja.Models;
 
 namespace invCruzRoja.Controllers
 {
+    [Authorize]
     public class PERSONASController : Controller
     {
         private CRUZROJACRINVEntities db = new CRUZROJACRINVEntities();
