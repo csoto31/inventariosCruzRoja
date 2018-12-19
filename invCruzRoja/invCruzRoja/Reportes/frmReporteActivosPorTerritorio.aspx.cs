@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,6 +17,7 @@ namespace invCruzRoja.Reportes
         {
 
         }
+
         void generarReporte()
         {
             string rutaReporte = "~/Reportes/rptTerritoriosActivos.rdlc";
@@ -56,6 +58,13 @@ namespace invCruzRoja.Reportes
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             this.generarReporte();
+        }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Response.Redirect("https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=http%3A%2F%2Flocalhost%3A50635%2FHome%2FIndex&x-client-SKU=ID_NET451&x-client-ver=5.2.1.0");
         }
     }
 }

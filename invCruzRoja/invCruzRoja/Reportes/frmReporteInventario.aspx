@@ -11,7 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Reporte de Activos por Empleado</title>
 </head>
-<body style="background-image:url(../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
+<body>
+    <form id="form2" runat="server">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -28,28 +29,27 @@
                         <li><a href="../Home">Inicio</a></li>
                         <li><a href="../Home/About">Acerca de</a></li>
                         <li><a href="../Home/Contact">Contacto</a></li>
-                        <li><a href="../Empleados">Empleados</a></li>
-                        <li><a href="../Inventarios">Inventarios</a></li>
-                        <li><a href="../Territorios">Territorios</a></li>
-                        <li><a href="../Personas">Personas</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
+                        
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Inventarios <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Reportes/frmReporteEmpleados.aspx">Reporte de Empleados</a></li>
-                                <li><a href="/Reportes/frmReporteInventario.aspx">Reporte de Inventario</a></li>
-                                <li><a href="/Reportes/frmReporteActivosPorTerritorio.aspx">Reporte de Activos por Territorios</a></li>
-                                <li><a href="/Reportes/frmReporteActivosPorEmpleado.aspx">Reporte de Activos por Empleado</a></li>
+								<li><a href="../Inventarios">Inventarios</a></li>
+                                <li><a href="../Empleados">Empleados</a></li>
+                                <li><a href="../Territorios">Territorios</a></li>
+                                <li><a href="../Personas">Personas</a></li>
+                                <li><a href="../ReportesI">Reportes</a></li>
                             </ul>
                         </li>
+                        <!-- <li><a href="../Home">Cerrar Sesión</a></li> -->
+                            <li><asp:Button type="button" class="btnLogout" ID="Button1" runat="server" Text="Cerrar Sesión" OnClick="Button1_Click" Style="background-color:#1e1e1e; border: none; margin-top:13%; color:whitesmoke;" /></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-    <form id="form1" runat="server">
         <div class="container" style="margin-top: 5%">
             <div class="row>">
                 <div class="col-md-12">
-                <h1 class="text-center">Reporte de Inventario</h1>
+                <h2 class="text-center">Reporte de Inventario</h2>
                 <br /><br />
                     <h4>Buscar registro por:</h4>    
                     <div class="col-md-5">
@@ -75,7 +75,18 @@
             </rsweb:ReportViewer>
             </div>
             </div>
+            <footer>
+            <hr />
+            <div class="col-md-10">
+                <br />
+                <p>@ 2018 - Sistema de Inventarios de la Cruz Roja Costarricense</p>
+            </div>
+            <div class="col-md-2">
+                <img src="../fonts/logoCRw2.png" style="width:70px; height:70px;" />
+            </div>
+        </footer>
         </div>
     </form>
+    
 </body>
 </html>

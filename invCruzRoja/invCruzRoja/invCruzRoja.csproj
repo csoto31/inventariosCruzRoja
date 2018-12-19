@@ -219,6 +219,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\INVENTARIOsController.cs" />
     <Compile Include="Controllers\PERSONASController.cs" />
+    <Compile Include="Controllers\ReportesIController.cs" />
     <Compile Include="Controllers\TERRITORIOSController.cs" />
     <Compile Include="CruzRojaInventariosDataSetEmpleados.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -320,6 +321,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\CRInfo.jpg" />
     <Content Include="fonts\cruzroja 1.png" />
     <Content Include="fonts\cruzroja 2.png" />
     <Content Include="fonts\cruzroja 3.png" />
@@ -463,6 +465,7 @@
     <Content Include="Views\Personas\Edit.cshtml" />
     <Content Include="Views\Personas\Index.cshtml" />
     <Content Include="Views\Claims\Index.cshtml" />
+    <Content Include="Views\ReportesI\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

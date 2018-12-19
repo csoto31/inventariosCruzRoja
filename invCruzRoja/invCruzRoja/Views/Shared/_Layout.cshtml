@@ -11,7 +11,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
+<!--<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">-->
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -50,19 +51,11 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Inventarios <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
                                 <li>@Html.ActionLink("Activos", "Index", "Inventarios")</li>
+                                <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>   
                                 <li>@Html.ActionLink("Territorios", "Index", "Territorios")</li>
                                 <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="~/Reportes/frmReporteEmpleados.aspx">Reporte de Empleados</a></li>
-                                <li><a href="~/Reportes/frmReporteInventario.aspx">Reporte de Inventario</a></li>
-                                <li><a href="~/Reportes/frmReporteActivosPorTerritorio.aspx">Reporte de Activos por Territorios</a></li>
-                                <li><a href="/Reportes/frmReporteActivosPorEmpleado.aspx">Reporte de Activos por Empleado</a></li>
+                                <li>@Html.ActionLink("Reportes", "Index", "ReportesI")</li>
                             </ul>
                         </li>
                         <li>
@@ -125,12 +118,20 @@
     <div class="container body-content">
         <br /><br />
         <h4 class="text-center">SISTEMA DE INVENTARIOS DE LA CRUZ ROJA COSTARRICENSE</h4>
-        <br /><br />
+        <hr />
+        <br />
         @RenderBody()
         <br />
-        <hr />
+        <br />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Sistema de Inventarios de la Cruz Roja Costarricense</p>
+            <hr />
+            <div class="col-md-10">
+                <br />
+                <p>&copy; @DateTime.Now.Year - Sistema de Inventarios de la Cruz Roja Costarricense</p>
+            </div>
+            <div class="col-md-2">
+                <img src="~/fonts/logoCRw2.png" style="width:70px; height:70px;" />
+            </div>
         </footer>
     </div>
 
