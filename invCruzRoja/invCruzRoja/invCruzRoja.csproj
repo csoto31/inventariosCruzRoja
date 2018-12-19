@@ -320,6 +320,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\CRInfo.jpg" />
     <Content Include="fonts\cruzroja 1.png" />
     <Content Include="fonts\cruzroja 2.png" />
     <Content Include="fonts\cruzroja 3.png" />

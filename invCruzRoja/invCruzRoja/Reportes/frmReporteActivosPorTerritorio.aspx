@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Reporte de Activos por Territorios</title>
 </head>
-<body style="background-image:url(../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
