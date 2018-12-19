@@ -13,6 +13,7 @@
 </head>
 <!--<body style="background-image:url(../fonts/logoCRw2.png); background-repeat: no-repeat; background-attachment: fixed; background-position:center;">-->
 <body>
+    <form id="form1" runat="server">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -39,13 +40,14 @@
                                 <li><a href="../ReportesI">Reportes</a></li>
                             </ul>
                         </li>
-                        <li><a href="../Home">Cerrar Sesión</a></li>
+                        <!-- <li><a href="../Home">Cerrar Sesión</a></li> -->
+                            <li><asp:Button type="button" class="btnLogout" ID="Button1" runat="server" Text="Cerrar Sesión" OnClick="Button1_Click" Style="background-color:#1e1e1e; border: none; margin-top:13%; color:whitesmoke;" /></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-    <form id="form1" runat="server">
+    
         <div class="container" style="margin-top: 5%">
             <div class="row>">
                 <div class="col-md-12">
@@ -82,6 +84,16 @@
                 <rsweb:ReportViewer ID="rvActivosEmpleados" runat="server" Width="100%" Height="577px"></rsweb:ReportViewer>
             </div>
             </div>
+            <footer>
+            <hr />
+            <div class="col-md-10">
+                <br />
+                 <p>@ 2018 - Sistema de Inventarios de la Cruz Roja Costarricense</p>
+            </div>
+            <div class="col-md-2">
+                <img src="../fonts/logoCRw2.png" style="width:70px; height:70px;" />
+            </div>
+        </footer>
         </div>
     </form>
 </body>
