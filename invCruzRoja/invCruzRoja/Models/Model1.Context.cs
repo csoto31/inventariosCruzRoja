@@ -78,23 +78,6 @@ namespace invCruzRoja.Models
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivosPorEmpleados_Result>("sp_ReporteActivosPorEmpleados", nombreParameter, apellido1Parameter, apellido2Parameter, tipoActivoParameter);
         }
     
-        public virtual ObjectResult<sp_ReporteActivosPorTerritorios_Result> sp_ReporteActivosPorTerritorios(string comite, string provincia, string tipoActivo)
-        {
-            var comiteParameter = comite != null ?
-                new ObjectParameter("comite", comite) :
-                new ObjectParameter("comite", typeof(string));
-    
-            var provinciaParameter = provincia != null ?
-                new ObjectParameter("provincia", provincia) :
-                new ObjectParameter("provincia", typeof(string));
-    
-            var tipoActivoParameter = tipoActivo != null ?
-                new ObjectParameter("tipoActivo", tipoActivo) :
-                new ObjectParameter("tipoActivo", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivosPorTerritorios_Result>("sp_ReporteActivosPorTerritorios", comiteParameter, provinciaParameter, tipoActivoParameter);
-        }
-    
         public virtual ObjectResult<sp_ReporteEmpleados_Result> sp_ReporteEmpleados(string nombre, string apellido1, string apellido2, string usuario, string correo)
         {
             var nombreParameter = nombre != null ?
@@ -118,6 +101,23 @@ namespace invCruzRoja.Models
                 new ObjectParameter("correo", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteEmpleados_Result>("sp_ReporteEmpleados", nombreParameter, apellido1Parameter, apellido2Parameter, usuarioParameter, correoParameter);
+        }
+    
+        public virtual ObjectResult<sp_ReporteActivosPorTerritorios_Result> sp_ReporteActivosPorTerritorios(string comite, string provincia, string tipoActivo)
+        {
+            var comiteParameter = comite != null ?
+                new ObjectParameter("comite", comite) :
+                new ObjectParameter("comite", typeof(string));
+    
+            var provinciaParameter = provincia != null ?
+                new ObjectParameter("provincia", provincia) :
+                new ObjectParameter("provincia", typeof(string));
+    
+            var tipoActivoParameter = tipoActivo != null ?
+                new ObjectParameter("tipoActivo", tipoActivo) :
+                new ObjectParameter("tipoActivo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_ReporteActivosPorTerritorios_Result>("sp_ReporteActivosPorTerritorios", comiteParameter, provinciaParameter, tipoActivoParameter);
         }
     }
 }

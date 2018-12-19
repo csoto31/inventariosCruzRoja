@@ -3,39 +3,45 @@
 @{
     ViewBag.Title = "Details";
 }
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>Territorios</h2>
+    <hr />
+    <h4>Detalles</h4>
+    <hr /><br /><div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Comite)
+            </dt>
 
-<h2>Territorios</h2>
-<hr />
-<h4>Detalles</h4>
-<hr /><br /><div>
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Comite)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Comite)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Comite)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Provincia)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Provincia)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Provincia)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Provincia)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Region)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Region)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Region)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Region)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Modificar", "Edit", new { id = Model.IDTerritorio }) |
-    @Html.ActionLink("Volver a la Lista", "Index")
-</p>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Modificar", "Edit", new { id = Model.IDTerritorio }) |
+        @Html.ActionLink("Volver a la Lista", "Index")
+    </p>
+    </body>

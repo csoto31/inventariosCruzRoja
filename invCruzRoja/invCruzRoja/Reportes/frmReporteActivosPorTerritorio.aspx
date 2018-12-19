@@ -24,22 +24,21 @@
             </div>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">             
-                    <ul class="nav navbar-nav">
+                   <ul class="nav navbar-nav">
                         <li><a href="../Home">Inicio</a></li>
                         <li><a href="../Home/About">Acerca de</a></li>
                         <li><a href="../Home/Contact">Contacto</a></li>
-                        <li><a href="../Empleados">Empleados</a></li>
-                        <li><a href="../Inventarios">Inventarios</a></li>
-                        <li><a href="../Territorios">Territorios</a></li>
-                        <li><a href="../Personas">Personas</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
+                        
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Inventarios <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Reportes/frmReporteEmpleados.aspx">Reporte de Empleados</a></li>
-                                <li><a href="/Reportes/frmReporteInventario.aspx">Reporte de Inventario</a></li>
-                                <li><a href="/Reportes/frmReporteActivosPorTerritorio.aspx">Reporte de Activos por Territorios</a></li>
-                                <li><a href="/Reportes/frmReporteActivosPorEmpleado.aspx">Reporte de Activos por Empleado</a></li>
+								<li><a href="../Inventarios">Inventarios</a></li>
+                                <li><a href="../Empleados">Empleados</a></li>
+                                <li><a href="../Territorios">Territorios</a></li>
+                                <li><a href="../Personas">Personas</a></li>
+                                <li><a href="../ReportesI">Reportes</a></li>
                             </ul>
                         </li>
+                        <li><a href="../Home">Cerrar Sesión</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +48,7 @@
         <div class="container" style="margin-top: 5%">
             <div class="row>">
                 <div class="col-md-12">
-                <h1 class="text-center">Reporte de Activos por Territorio</h1>
+                <h2 class="text-center">Reporte de Activos por Territorio</h2>
                 <br /><br />
                     <h4>Buscar registro por:</h4>
                     <div class="col-md-4">

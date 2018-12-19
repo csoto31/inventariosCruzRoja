@@ -141,17 +141,17 @@
       <Parameter Name="apellido2" Mode="In" Type="String" />
       <Parameter Name="tipoActivo" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="sp_ReporteActivosPorTerritorios" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result)">
-      <Parameter Name="comite" Mode="In" Type="String" />
-      <Parameter Name="provincia" Mode="In" Type="String" />
-      <Parameter Name="tipoActivo" Mode="In" Type="String" />
-    </FunctionImport>
     <FunctionImport Name="sp_ReporteEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteEmpleados_Result)">
       <Parameter Name="nombre" Mode="In" Type="String" />
       <Parameter Name="apellido1" Mode="In" Type="String" />
       <Parameter Name="apellido2" Mode="In" Type="String" />
       <Parameter Name="usuario" Mode="In" Type="String" />
       <Parameter Name="correo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ReporteActivosPorTerritorios" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result)">
+      <Parameter Name="comite" Mode="In" Type="String" />
+      <Parameter Name="provincia" Mode="In" Type="String" />
+      <Parameter Name="tipoActivo" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="sp_ReporteActivos_Result">
@@ -189,6 +189,20 @@
     <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
     <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
   </ComplexType>
+  <ComplexType Name="sp_ReporteEmpleados_Result">
+    <Property Type="Int32" Name="IDEmpleado" Nullable="false" />
+    <Property Type="String" Name="Usuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Correo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TipoUsuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Rol" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+  </ComplexType>
   <ComplexType Name="sp_ReporteActivosPorTerritorios_Result">
     <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
     <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
@@ -204,19 +218,5 @@
     <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
     <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
     <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
-  </ComplexType>
-  <ComplexType Name="sp_ReporteEmpleados_Result">
-    <Property Type="Int32" Name="IDEmpleado" Nullable="false" />
-    <Property Type="String" Name="Usuario" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Correo" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="TipoUsuario" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="Rol" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
-    <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
-    <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
   </ComplexType>
 </Schema>

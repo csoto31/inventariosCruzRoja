@@ -1128,7 +1128,6 @@ C:\Users\Joyce\Source\Repos\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\S
 C:\Users\Joyce\Source\Repos\inventariosCruzRoja\invCruzRoja\invCruzRoja\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\Joyce\Source\Repos\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.dll
 C:\Users\Joyce\Source\Repos\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.pdb
-C:\Users\Joyce\Source\Repos\inventariosCruzRoja\invCruzRoja\invCruzRoja\obj\Debug\invCruzRoja.csprojResolveAssemblyReference.cache
 C:\Users\sotom\Source\Repos\inventariosCruzRoja2\invCruzRoja\invCruzRoja\bin\ApplicationInsights.config
 C:\Users\sotom\Source\Repos\inventariosCruzRoja2\invCruzRoja\invCruzRoja\bin\SqlServerTypes\x64\msvcr120.dll
 C:\Users\sotom\Source\Repos\inventariosCruzRoja2\invCruzRoja\invCruzRoja\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
