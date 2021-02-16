@@ -1,0 +1,74 @@
+﻿@model IEnumerable<invCruzRoja.Models.TERRITORIOS>
+
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!----<body style="background-image:url(../../fonts/fondo-principal.jpg); background-repeat: no-repeat; background-attachment: fixed">-->
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+</body>
+
+<h2>Territorios</h2>
+<hr /><br />
+<input class="form-control" id="myInput" type="text" placeholder="Busqueda Rapida..">
+<br />
+@Html.ActionLink("Nuevo Territorio", "Create", "Controller", new { @class = "btn btn-primary" })
+<br />
+<br />
+
+<table class="table  table-hover " id="myTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Comite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>Editar</th>
+        <th>Detalles</th>
+        <th>Eliminar</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region)
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Edit", new { id = item.IDTerritorio }, new { @class = "glyphicon glyphicon-pencil" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Details", new { id = item.IDTerritorio }, new { @class = "glyphicon glyphicon-eye-open" })
+            </td>
+            <td class="text-center">
+                @Html.ActionLink(" ", "Delete", new { id = item.IDTerritorio }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+
+        </tr>
+    }
+
+</table>

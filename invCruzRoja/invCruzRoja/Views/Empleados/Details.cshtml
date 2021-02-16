@@ -1,0 +1,64 @@
+﻿@model invCruzRoja.Models.EMPLEADOS
+
+@{
+    ViewBag.Title = "Details";
+}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>Empleados</h2>
+    <hr />
+    <h4>Detalles</h4>
+    <hr /><br />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Usuario)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TipoUsuario)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TipoUsuario)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Correo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Correo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PERSONAS.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PERSONAS.Nombre)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Modificar", "Edit", new { id = Model.IDEmpleado }) |
+        @Html.ActionLink("Volver a la Lista", "Index")
+    </p>
+    </body>

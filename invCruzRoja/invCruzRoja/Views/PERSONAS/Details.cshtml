@@ -1,0 +1,81 @@
+﻿@model invCruzRoja.Models.PERSONAS
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>Personas</h2>
+    <hr />
+    <h4>Detalles</h4>
+    <hr /><br />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Apellido1)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Apellido1)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Apellido2)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Apellido2)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Telefono)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Rol)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Rol)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TERRITORIOS.Comite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TERRITORIOS.Comite)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Modificar", "Edit", new { id = Model.IDPersona }) |
+        @Html.ActionLink("Volver a la Lista", "Index")
+    </p>
+    </body>

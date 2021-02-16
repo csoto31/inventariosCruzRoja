@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CruzRojaInventariosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EMPLEADOS">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Usuario" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="30" />
+          <Property Name="TipoUsuario" Type="varchar" MaxLength="50" />
+          <Property Name="IDPersona" Type="int" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="INVENTARIO">
+          <Key>
+            <PropertyRef Name="IDInventario" />
+          </Key>
+          <Property Name="IDInventario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Marca" Type="varchar" MaxLength="50" />
+          <Property Name="Modelo" Type="varchar" MaxLength="50" />
+          <Property Name="NumSerie" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" />
+          <Property Name="IDEmpleado" Type="int" />
+          <Property Name="IDTerritorio" Type="int" />
+          <Property Name="FechaAsignado" Type="datetime" />
+          <Property Name="FechaRetiro" Type="datetime" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="1000" />
+          <Property Name="TipoActivo" Type="varchar" MaxLength="50" />
+          <Property Name="MACAddress" Type="varchar" MaxLength="100" />
+          <Property Name="Propietario" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PERSONAS">
+          <Key>
+            <PropertyRef Name="IDPersona" />
+          </Key>
+          <Property Name="IDPersona" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Apellido1" Type="varchar" MaxLength="50" />
+          <Property Name="Apellido2" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Rol" Type="varchar" MaxLength="50" />
+          <Property Name="IDTerritorio" Type="int" />
+        </EntityType>
+        <EntityType Name="TERRITORIOS">
+          <Key>
+            <PropertyRef Name="IDTerritorio" />
+          </Key>
+          <Property Name="IDTerritorio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Comite" Type="varchar" MaxLength="200" />
+          <Property Name="Provincia" Type="varchar" MaxLength="200" />
+          <Property Name="Region" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_EMPLEADOS_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="IDPersona" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="IDPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INVENTARIO_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="0..1" />
+          <End Role="INVENTARIO" Type="Self.INVENTARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="IDPersona" />
+            </Principal>
+            <Dependent Role="INVENTARIO">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INVENTARIO_TERRITORIOS">
+          <End Role="TERRITORIOS" Type="Self.TERRITORIOS" Multiplicity="0..1" />
+          <End Role="INVENTARIO" Type="Self.INVENTARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TERRITORIOS">
+              <PropertyRef Name="IDTerritorio" />
+            </Principal>
+            <Dependent Role="INVENTARIO">
+              <PropertyRef Name="IDTerritorio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_TERRITORIOS">
+          <End Role="TERRITORIOS" Type="Self.TERRITORIOS" Multiplicity="0..1" />
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TERRITORIOS">
+              <PropertyRef Name="IDTerritorio" />
+            </Principal>
+            <Dependent Role="PERSONAS">
+              <PropertyRef Name="IDTerritorio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_ReporteActivos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+          <Parameter Name="marca" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteActivosPorEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteActivosPorTerritorios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="comite" Type="varchar" Mode="In" />
+          <Parameter Name="provincia" Type="varchar" Mode="In" />
+          <Parameter Name="tipoActivo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ReporteEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="apellido1" Type="varchar" Mode="In" />
+          <Parameter Name="apellido2" Type="varchar" Mode="In" />
+          <Parameter Name="usuario" Type="varchar" Mode="In" />
+          <Parameter Name="correo" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="CruzRojaInventariosModelStoreContainer">
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TERRITORIOS" EntityType="Self.TERRITORIOS" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_EMPLEADOS_PERSONAS" Association="Self.FK_EMPLEADOS_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INVENTARIO_PERSONAS" Association="Self.FK_INVENTARIO_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="INVENTARIO" EntitySet="INVENTARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INVENTARIO_TERRITORIOS" Association="Self.FK_INVENTARIO_TERRITORIOS">
+            <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
+            <End Role="INVENTARIO" EntitySet="INVENTARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_TERRITORIOS" Association="Self.FK_PERSONAS_TERRITORIOS">
+            <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CruzRojaInventariosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EMPLEADOS">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TipoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDPersona" Type="Int32" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PERSONAS" Relationship="Self.FK_EMPLEADOS_PERSONAS" FromRole="EMPLEADOS" ToRole="PERSONAS" />
+        </EntityType>
+        <EntityType Name="INVENTARIO">
+          <Key>
+            <PropertyRef Name="IDInventario" />
+          </Key>
+          <Property Name="IDInventario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NumSerie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDEmpleado" Type="Int32" />
+          <Property Name="IDTerritorio" Type="Int32" />
+          <Property Name="FechaAsignado" Type="DateTime" Precision="3" />
+          <Property Name="FechaRetiro" Type="DateTime" Precision="3" />
+          <Property Name="Descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="TipoActivo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MACAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Propietario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PERSONAS" Relationship="Self.FK_INVENTARIO_PERSONAS" FromRole="INVENTARIO" ToRole="PERSONAS" />
+          <NavigationProperty Name="TERRITORIOS" Relationship="Self.FK_INVENTARIO_TERRITORIOS" FromRole="INVENTARIO" ToRole="TERRITORIOS" />
+        </EntityType>
+        <EntityType Name="PERSONAS">
+          <Key>
+            <PropertyRef Name="IDPersona" />
+          </Key>
+          <Property Name="IDPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDTerritorio" Type="Int32" />
+          <NavigationProperty Name="EMPLEADOS" Relationship="Self.FK_EMPLEADOS_PERSONAS" FromRole="PERSONAS" ToRole="EMPLEADOS" />
+          <NavigationProperty Name="INVENTARIO" Relationship="Self.FK_INVENTARIO_PERSONAS" FromRole="PERSONAS" ToRole="INVENTARIO" />
+          <NavigationProperty Name="TERRITORIOS" Relationship="Self.FK_PERSONAS_TERRITORIOS" FromRole="PERSONAS" ToRole="TERRITORIOS" />
+        </EntityType>
+        <EntityType Name="TERRITORIOS">
+          <Key>
+            <PropertyRef Name="IDTerritorio" />
+          </Key>
+          <Property Name="IDTerritorio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Comite" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Provincia" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="INVENTARIO" Relationship="Self.FK_INVENTARIO_TERRITORIOS" FromRole="TERRITORIOS" ToRole="INVENTARIO" />
+          <NavigationProperty Name="PERSONAS" Relationship="Self.FK_PERSONAS_TERRITORIOS" FromRole="TERRITORIOS" ToRole="PERSONAS" />
+        </EntityType>
+        <Association Name="FK_EMPLEADOS_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="0..1" />
+          <End Role="EMPLEADOS" Type="Self.EMPLEADOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="IDPersona" />
+            </Principal>
+            <Dependent Role="EMPLEADOS">
+              <PropertyRef Name="IDPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INVENTARIO_PERSONAS">
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="0..1" />
+          <End Role="INVENTARIO" Type="Self.INVENTARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONAS">
+              <PropertyRef Name="IDPersona" />
+            </Principal>
+            <Dependent Role="INVENTARIO">
+              <PropertyRef Name="IDEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INVENTARIO_TERRITORIOS">
+          <End Role="TERRITORIOS" Type="Self.TERRITORIOS" Multiplicity="0..1" />
+          <End Role="INVENTARIO" Type="Self.INVENTARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TERRITORIOS">
+              <PropertyRef Name="IDTerritorio" />
+            </Principal>
+            <Dependent Role="INVENTARIO">
+              <PropertyRef Name="IDTerritorio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONAS_TERRITORIOS">
+          <End Role="TERRITORIOS" Type="Self.TERRITORIOS" Multiplicity="0..1" />
+          <End Role="PERSONAS" Type="Self.PERSONAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TERRITORIOS">
+              <PropertyRef Name="IDTerritorio" />
+            </Principal>
+            <Dependent Role="PERSONAS">
+              <PropertyRef Name="IDTerritorio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CRUZROJACRINVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EMPLEADOS" EntityType="Self.EMPLEADOS" />
+          <EntitySet Name="INVENTARIO" EntityType="Self.INVENTARIO" />
+          <EntitySet Name="PERSONAS" EntityType="Self.PERSONAS" />
+          <EntitySet Name="TERRITORIOS" EntityType="Self.TERRITORIOS" />
+          <AssociationSet Name="FK_EMPLEADOS_PERSONAS" Association="Self.FK_EMPLEADOS_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="EMPLEADOS" EntitySet="EMPLEADOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INVENTARIO_PERSONAS" Association="Self.FK_INVENTARIO_PERSONAS">
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+            <End Role="INVENTARIO" EntitySet="INVENTARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INVENTARIO_TERRITORIOS" Association="Self.FK_INVENTARIO_TERRITORIOS">
+            <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
+            <End Role="INVENTARIO" EntitySet="INVENTARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONAS_TERRITORIOS" Association="Self.FK_PERSONAS_TERRITORIOS">
+            <End Role="TERRITORIOS" EntitySet="TERRITORIOS" />
+            <End Role="PERSONAS" EntitySet="PERSONAS" />
+          </AssociationSet>
+          <FunctionImport Name="sp_ReporteActivos" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivos_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+            <Parameter Name="marca" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteActivosPorEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorEmpleados_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteEmpleados" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteEmpleados_Result)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="apellido1" Mode="In" Type="String" />
+            <Parameter Name="apellido2" Mode="In" Type="String" />
+            <Parameter Name="usuario" Mode="In" Type="String" />
+            <Parameter Name="correo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ReporteActivosPorTerritorios" ReturnType="Collection(CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result)">
+            <Parameter Name="comite" Mode="In" Type="String" />
+            <Parameter Name="provincia" Mode="In" Type="String" />
+            <Parameter Name="tipoActivo" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="sp_ReporteActivos_Result">
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteActivosPorEmpleados_Result">
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteEmpleados_Result">
+          <Property Type="Int32" Name="IDEmpleado" Nullable="false" />
+          <Property Type="String" Name="Usuario" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Correo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TipoUsuario" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Telefono" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Rol" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_ReporteActivosPorTerritorios_Result">
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Comite" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="IDInventario" Nullable="false" />
+          <Property Type="String" Name="Marca" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Modelo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NumSerie" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="FechaAsignado" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="FechaRetiro" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="TipoActivo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MACAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Propietario" Nullable="true" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CruzRojaInventariosModelStoreContainer" CdmEntityContainer="CRUZROJACRINVEntities">
+          <EntitySetMapping Name="EMPLEADOS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.EMPLEADOS">
+              <MappingFragment StoreEntitySet="EMPLEADOS">
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+                <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INVENTARIO">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.INVENTARIO">
+              <MappingFragment StoreEntitySet="INVENTARIO">
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERSONAS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.PERSONAS">
+              <MappingFragment StoreEntitySet="PERSONAS">
+                <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TERRITORIOS">
+            <EntityTypeMapping TypeName="CruzRojaInventariosModel.TERRITORIOS">
+              <MappingFragment StoreEntitySet="TERRITORIOS">
+                <ScalarProperty Name="IDTerritorio" ColumnName="IDTerritorio" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivos" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivos_Result">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorEmpleados" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivosPorEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivosPorEmpleados_Result">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteEmpleados" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteEmpleados_Result">
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_ReporteActivosPorTerritorios" FunctionName="CruzRojaInventariosModel.Store.sp_ReporteActivosPorTerritorios">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CruzRojaInventariosModel.sp_ReporteActivosPorTerritorios_Result">
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Comite" ColumnName="Comite" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="IDInventario" ColumnName="IDInventario" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAsignado" ColumnName="FechaAsignado" />
+                <ScalarProperty Name="FechaRetiro" ColumnName="FechaRetiro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoActivo" ColumnName="TipoActivo" />
+                <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
